@@ -1,0 +1,35 @@
+def zip_to_neighbor(zippy):
+    code = int(zippy)
+    if code == 2134 or code == 2163:
+        return "Allston"
+    if code == 2135:
+        return "Brighton"
+    if code == 2108 or code == 2116 or code == 2117 or code == 2123 or code == 2133 or code == 2199 or code == 2216 or code == 2217 or code == 2295:
+        return "Back Bay/Beacon Hill"
+    if (code >= 2101 and code <= 2107) or (code >= 2109 and code <= 2114) or code == 2196 or (code >= 2201 and code <= 2209) or code == 2211 or code == 2212 or code == 2222 or code == 2293:
+        return "Central Boston"
+    if code == 2129:
+        return "Charlestown"
+    if code == 2122 or code == 2124 or code == 2125:
+        return "Dorchester"
+    if code == 2128 or code == 2228:
+        return "East Boston"
+    if code == 2115 or code == 2215:
+        return "Fenway/Kenmore"
+    if code == 2136:
+        return "Hyde Park"
+    if code == 2130:
+        return "Jamaica Plain"
+    if code == 2126:
+        return "Mattapan"
+    if code == 2131:
+        return "Roslindale"
+    if code == 2119 or code == 2120 or code == 2121:
+        return "Roxbury"
+    if code == 2127 or code == 2210:
+        return "South Boston"
+    if code == 2118:
+        return "South End"
+    if code == 2132:
+        return "West Roxbury"
+    return "Not in Boston"
